@@ -34,6 +34,7 @@
         "views/report_contributionregister.xml",
         "views/report_payslip.xml",
         "views/report_payslipdetails.xml",
+        "views/report_nomina_document.xml",
         "report/report.xml",
         "views/res_config_settings_views.xml",
         "wizard/hr_payroll_send_email.xml",

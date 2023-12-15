@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_nomina_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>Reporte de Nomina</h2>
+                            <p t-field="o.name" />
+                        </div>
+                            <div style="margin: 20px 0px">
+                                <table class="table table-sm o_main_table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th><strong>Nombres</strong></th>
+                                            <th><strong>Salario Total</strong></th>
+                                            <th><strong>Salario Quincenal</strong></th>
+                                            <th><strong>ISR</strong></th>
+                                            <th><strong>AFP</strong></th>
+                                            <th><strong>Total Bruto</strong></th>
+                                            <th><strong>Total Deducciones</strong></th>
+                                            <th><strong>Total Neto</strong></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="o.slip_ids" t-as="line">
+                                            <td>
+                                                <span t-field="line.employee_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.contract_id.wage"/>
+                                            </td>
+                                            <td t-foreach="line.dynamic_filtered_payslip_lines" t-as="nominalines">
+                                                <span t-field="nominalines.total"/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+</odoo>
