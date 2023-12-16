@@ -12,14 +12,15 @@
                                 <table class="table table-sm o_main_table">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th><strong>Nombres</strong></th>
-                                            <th><strong>Salario Total</strong></th>
-                                            <th><strong>Salario Quincenal</strong></th>
-                                            <th><strong>ISR</strong></th>
+                                            <th><strong>Empleado</strong></th>
+                                            <th><strong>Salario Base</strong></th>
                                             <th><strong>AFP</strong></th>
-                                            <th><strong>Total Bruto</strong></th>
+                                            <th><strong>SFS</strong></th>
+                                            <th><strong>Per Cápita</strong></th>
+                                            <th><strong>Neto</strong></th>
+                                            <th><strong>ISR</strong></th>
                                             <th><strong>Total Deducciones</strong></th>
-                                            <th><strong>Total Neto</strong></th>
+                                            <th><strong>A Pagar</strong></th>
                                         </tr>
                                     </thead>
                                     <tbody>
