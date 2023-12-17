@@ -28,9 +28,6 @@
                                             <td>
                                                 <span t-field="line.employee_id"/>
                                             </td>
-                                            <td>
-                                                <span t-field="line.contract_id.wage"/>
-                                            </td>
                                             <td t-foreach="line.dynamic_filtered_payslip_lines" t-as="nominalines">
                                                 <span t-field="nominalines.total"/>
                                             </td>
