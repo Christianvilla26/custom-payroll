@@ -44,6 +44,5 @@
         </field>
         <field name="binding_model_id" ref="model_hr_payslip_run"/>
         <field name="binding_type">report</field>
-        <field name="orientation">Landscape</field>
     </record>
 </odoo>
