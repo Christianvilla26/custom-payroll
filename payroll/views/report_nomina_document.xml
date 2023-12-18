@@ -13,14 +13,7 @@
                                     <thead class="thead-light">
                                         <tr>
                                             <th><strong>Empleado</strong></th>
-                                            <th><strong>Salario Base</strong></th>
-                                            <th><strong>AFP</strong></th>
-                                            <th><strong>SFS</strong></th>
-                                            <th><strong>Per Cápita</strong></th>
-                                            <th><strong>Neto</strong></th>
-                                            <th><strong>ISR</strong></th>
-                                            <th><strong>Total Deducciones</strong></th>
-                                            <th><strong>A Pagar</strong></th>
+                                            <th t-foreach="o.struct_id.rule_ids" t-as="rules"><strong t-field="rules.name"/></th>
                                         </tr>
                                     </thead>
                                     <tbody>
